@@ -7,3 +7,12 @@
 
 (load-theme 'zenburn t)
 
+;; Save emacs autosave files (*~) in a specific directory to avoid cluttering
+(setq auto-save-file-name-transforms
+      `((".*" ,(concat user-emacs-directory "autosave/") t)))
+
+
+;; Same for emacs backup files.
+(setq backup-directory-alist
+      `(("." . ,(expand-file-name
+                 (concat user-emacs-directory "backups/")))))
