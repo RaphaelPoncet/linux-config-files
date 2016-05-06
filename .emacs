@@ -11,8 +11,15 @@
 (setq auto-save-file-name-transforms
       `((".*" ,(concat user-emacs-directory "autosave/") t)))
 
-
 ;; Same for emacs backup files.
 (setq backup-directory-alist
       `(("." . ,(expand-file-name
                  (concat user-emacs-directory "backups/")))))
+
+;; Add screen real estate.
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
+
+;; Highlight matching parentheses
+(show-paren-mode)
