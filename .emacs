@@ -23,3 +23,6 @@
 
 ;; Highlight matching parentheses
 (show-paren-mode)
+
+;; Tabs: replace them with 2 spaces.
+(setq-default tab-width 2 indent-tabs-mode nil)
