@@ -26,3 +26,6 @@
 
 ;; Tabs: replace them with 2 spaces.
 (setq-default tab-width 2 indent-tabs-mode nil)
+
+;; Do not type the full words 'yes' or 'no' when emacs asks
+(defalias 'yes-or-no-p 'y-or-n-p)
