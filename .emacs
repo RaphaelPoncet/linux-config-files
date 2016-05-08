@@ -29,3 +29,7 @@
 
 ;; Do not type the full words 'yes' or 'no' when emacs asks
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; Turn on auto-complete.
+(require 'auto-complete-config)
+(ac-config-default)
